@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Ecomerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" width="125px" alt="Logo Ecomerce">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="">Acerca de nosotros</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="login.html">Cuenta</a></li>
+            </ul>
+        </nav>
+        <a href="carrito.html"><img src="images/cart.png" width="30px" height="30px"></a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+</div>
+
+<!------ detalles del producto ----->
+<div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+            <img src="images/gallery-1.jpg" width="100%" id="product-img">
+
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="images/gallery-1.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/gallery-2.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/gallery-3.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/gallery-4.jpg" width="100%" class="small-img">
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <p>Home / Camiseta</p>
+            <h1>Camiseta Roja by Inge</h1>
+            <h4>$50.000</h4>
+            <select>
+                <option>Selecccione talla</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+            </select>
+            <input type="number" value="1">
+            <a href="" class="btn">Añadir a carrito</a>
+            <h3>Detalles del producto <i class="fa fa-indent"></i></h3>
+            <br>
+            <p>Mejora el estilo de tu armario con la camiseta activa ING para hombre. Combínalo con una pantaloneta para tu entrenamiento matutino o un jean para salir por la noche con tus amigos.</p>
+        </div>
+    </div>
+</div>
+<!------ titulo ----->
+
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Productos relacionados</h2>
+        <p>ver más</p>
+    </div>
+</div>
+<!------ productos ----->
+<div class="small-container">
+
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-9.jpg">
+                <h4>Camiseta Roja</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.000</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-10.jpg">
+                <h4>Camiseta Roja</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.000</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-11.jpg">
+                <h4>Camiseta Roja</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.000</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-12.jpg">
+                <h4>Camiseta Roja</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$50.000</p>
+            </div>
+        </div>
+</div>
+<!------ footer ----->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Descarga nuestras aplicaciones</h3>
+                <p>Descarga la aplicación para teléfonos móviles Android e iOS</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo-white.png">
+                <p>Nuestro propósito es hacer que el placer y los beneficios de los deportes sean accesibles para muchos de manera sostenible</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Enlaces útiles</h3>
+                <ul>
+                    <li>Cupones</li>
+                    <li>Blog post</li>
+                    <li>Política de devoluciones</li>
+                    <li>Unirse Afiliado</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Síganos</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023 - Ingenieria Web</p>
+    </div>
+</div>
+<script src="javascript.js"></script>
+</body>
+</html>
