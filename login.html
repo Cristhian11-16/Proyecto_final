@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de compras - Ecomerce</title>
+    <title>inicio sesion - Ecomerce</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,11 +12,13 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+<!------ header ----->
 
 <div class="container">
     <div class="navbar">
         <div class="logo">
-            <a href="index.html"><img src="images/logo.png" width="125px" alt="Logo Ecomerce"></a>        </div>
+            <a href="index.html"><img src="images/logo.png" width="125px" alt="Logo Ecomerce"></a>
+        </div>
         <nav>
             <ul id="MenuItems">
                 <li><a href="index.html">Inicio</a></li>
@@ -31,75 +33,39 @@
     </div>
 </div>
 
-<!------ items de carrito ----->
-<div class="small-container cart-page">
-    <table>
-        <tr>
-            <th>Producto</th>
-            <th>Cantidad</th>
-            <th>Subtotal</th>
-        </tr>
-        <tr>
-            <td>
-                <div class="cart-info">
-                    <img src="images/buy-1.jpg">
-                    <div>
-                        <p>Camiseta Roja</p>
-                        <small>Precio: $50.000</small><br>
-                        <a href="">Eliminar</a>
+<!------ Cuenta ----->
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/image1.png" width="100%">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Iniciar Sesion</span>
+                        <span onclick="register()">Registrar</span>
+                        <hr id="Indicator">
                     </div>
+                    <form id="LoginForm">
+                        <input type="text" placeholder="Usuario">
+                        <input type="password" placeholder="Contraseña">
+                        <button type="submit" class="btn">Ingresar</button>
+                        <a href="">¿Olvidaste tu Contraseña?</a>
+                    </form>
+                    <form id="RegForm">
+                        <input type="text" placeholder="Usuario">
+                        <input type="email" placeholder="Correo Electronico">
+                        <input type="password" placeholder="Contraseña">
+                        <input type="password" placeholder="Confirmar contraseña">
+                        <button type="submit" class="btn">Registrar</button>
+                        <!--<input type="checkbox"><a href="">Aceptar terminos y condiciones.</a>-->
+                    </form>
                 </div>
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>$50.000</td>
-        </tr>
-        <tr>
-            <td>
-                <div class="cart-info">
-                    <img src="images/buy-2.jpg">
-                    <div>
-                        <p>Camiseta Roja</p>
-                        <small>Precio: $40.000</small><br>
-                        <a href="">Eliminar</a>
-                    </div>
-                </div>
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>$50.000</td>
-        </tr>
-        <tr>
-            <td>
-                <div class="cart-info">
-                    <img src="images/buy-3.jpg">
-                    <div>
-                        <p>Camiseta Roja</p>
-                        <small>Precio: $60.000</small><br>
-                        <a href="">Eliminar</a>
-                    </div>
-                </div>
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>$50.000</td>
-        </tr>
-    </table>
-    <div class="total-price">
-        <table>
-            <tr>
-                <td>Subtotal</td>
-                <td>$150.000</td>
-            </tr>
-            <tr>
-                <td>Impuesto</td>
-                <td>$14.000</td>
-            </tr>
-            <tr>
-                <td>Total</td>
-                <td>$164.000</td>
-            </tr>
-        </table>
+            </div>
+        </div>
     </div>
 </div>
-
 
 <!------ footer ----->
 <div class="footer">
