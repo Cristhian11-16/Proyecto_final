@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio sesion - Ecomerce</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!------ header ----->
+
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="principal.html"><img src="img/logo.png" width="125px" alt="Logo Ecomerce"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="principal.html">Inicio</a></li>
+                <li><a href="mostrarproductos.html">Productos</a></li>
+                <li><a href="">Acerca de nosotros</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="acceder.html">Cuenta</a></li>
+            </ul>
+        </nav>
+        <a href="carrito.html"><img src="img/cart.png" width="30px" height="30px"></a>
+        <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+</div>
+
+<!------ Cuenta ----->
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="img/image1.png" width="100%">
+            </div>
+                    <section class="form-register">
+                        <h4>Login</h4>
+                        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+                        <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+                        <br>
+                        <a href=""><input class="botons" type="submit" value="Iniciar sesion" onclick="ValidarIdentidad()"></a>
+                        <p><a href="registrar.html">Registrarse</a></p>
+                      </section>
+                </div>
+            </div>
+        </div>
+
+<!------ footer ----->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Descarga nuestras aplicaciones</h3>
+                <p>Descarga la aplicación para teléfonos móviles Android e iOS</p>
+                <div class="app-logo">
+                    <img src="img/play-store.png">
+                    <img src="img/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="img/logo.png">
+                <p>Nuestro propósito es hacer que el placer y los beneficios de los deportes sean accesibles para muchos de manera sostenible</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Enlaces útiles</h3>
+                <ul>
+                    <li>Cupones</li>
+                    <li>Blog post</li>
+                    <li>Política de devoluciones</li>
+                    <li>Unirse Afiliado</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Síganos</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023 - Ingenieria Web</p>
+    </div>
+</div>
+<script src="javascript.js"></script>
+</body>
+</html>
